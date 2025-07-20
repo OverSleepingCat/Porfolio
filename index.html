@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Brenn Portfolio - Full Stack Developer</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon">💻</span>
+        <span class="logo-text">Brenn</span>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#skills" class="nav-link">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-slider">
+      <div class="slide active" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        <div class="slide-content">
+          <h1 class="hero-title">Full Stack Developer</h1>
+          <p class="hero-subtitle">Creating beautiful and functional web experiences</p>
+        </div>
+      </div>
+      <div class="slide" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+        <div class="slide-content">
+          <h1 class="hero-title">UI/UX Designer</h1>
+          <p class="hero-subtitle">Designing intuitive and engaging user interfaces</p>
+        </div>
+      </div>
+      <div class="slide" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+        <div class="slide-content">
+          <h1 class="hero-title">Problem Solver</h1>
+          <p class="hero-subtitle">Turning ideas into digital reality</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-navigation">
+      <button class="hero-arrow hero-prev" id="hero-prev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="hero-arrow hero-next" id="hero-next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <div class="hero-dots">
+      <span class="hero-dot active" data-slide="0"></span>
+      <span class="hero-dot" data-slide="1"></span>
+      <span class="hero-dot" data-slide="2"></span>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-arrow">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Passionate developer with a love for creating amazing digital experiences</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Hello! I'm Brenn, a passionate full-stack developer with expertise in modern web technologies. I love creating beautiful, functional, and user-friendly applications that solve real-world problems.</p>
+          <p>With a strong foundation in both frontend and backend development, I enjoy working on projects that challenge me to learn and grow. I'm always excited to collaborate on innovative projects and bring creative ideas to life.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Client Satisfaction</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="image-placeholder">
+            <i class="fas fa-user-circle"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+      <div class="skills-content">
+        <div class="skills-categories">
+          <div class="skill-category">
+            <h3 class="category-title">Frontend Development</h3>
+            <div class="skill-buttons">
+              <button class="skill-btn active" data-skill="html">HTML</button>
+              <button class="skill-btn" data-skill="css">CSS</button>
+              <button class="skill-btn" data-skill="javascript">JavaScript</button>
+              <button class="skill-btn" data-skill="react">React</button>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="category-title">Backend Development</h3>
+            <div class="skill-buttons">
+              <button class="skill-btn" data-skill="php">PHP</button>
+              <button class="skill-btn" data-skill="python">Python</button>
+              <button class="skill-btn" data-skill="sql">SQL</button>
+              <button class="skill-btn" data-skill="nodejs">Node.js</button>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 class="category-title">Design Tools</h3>
+            <div class="skill-buttons">
+              <button class="skill-btn" data-skill="figma">Figma</button>
+              <button class="skill-btn" data-skill="photoshop">Photoshop</button>
+              <button class="skill-btn" data-skill="illustrator">Illustrator</button>
+            </div>
+          </div>
+        </div>
+        <div class="skill-display">
+          <div class="skill-info" id="skill-info">
+            <div class="skill-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h4 class="skill-name">HTML</h4>
+            <p class="skill-description">The foundation of web development. HTML structures content and provides semantic meaning to web pages, ensuring accessibility and SEO optimization.</p>
+            <div class="skill-level">
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+              <span class="skill-percentage">95%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Some of my recent work and personal projects</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=600" alt="To-Do List App">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" title="View Live">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" title="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">To-Do List App</h3>
+            <p class="project-description">A modern task management application with drag-and-drop functionality, categories, and local storage.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">CSS</span>
+              <span class="tag">HTML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Weather App">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" title="View Live">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" title="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Weather Dashboard</h3>
+            <p class="project-description">Real-time weather application with forecasts, interactive maps, and beautiful animations.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">API</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Cooking Timer">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" title="View Live">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" title="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Cooking Timer</h3>
+            <p class="project-description">Multiple timer app for cooking with preset times, custom timers, and audio notifications.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">PWA</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tic-Tac-Toe">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" title="View Live">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" title="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Tic-Tac-Toe Game</h3>
+            <p class="project-description">Interactive game with AI opponent, score tracking, and smooth animations.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Game Logic</span>
+              <span class="tag">AI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/4348401/pexels-photo-4348401.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Writer App">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" title="View Live">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" title="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Writing App</h3>
+            <p class="project-description">Distraction-free writing environment with word count, auto-save, and export features.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Local Storage</span>
+              <span class="tag">Editor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://images.pexels.com/photos/1337247/pexels-photo-1337247.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Portfolio Website">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" title="View Live">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" title="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-description">Responsive portfolio website showcasing projects and skills with modern design.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's work together on your next project</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p>brenn@example.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>New York, NY</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            <span class="btn-text">Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Brenn Portfolio. All rights reserved.</p>
+        <p>Designed and developed with ❤️</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" id="scroll-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Success Message -->
+  <div class="success-message" id="success-message">
+    <i class="fas fa-check-circle"></i>
+    <span>Message sent successfully!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
